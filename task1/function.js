@@ -55,10 +55,46 @@ function fibanocci()
 function gender()
 {
      x = document.getElementById("val").value;
-    var str=x.toLowerCase()
-    console.log(x)
+   
     if(x=='male')
     {
-        document.getElementById("getVal").innerHTML="The person is male";
+        document.getElementById("getVal").innerHTML="Person is male";
     }
+    else if(x=='female')
+    {
+        document.getElementById("getVal").innerHTML="Person is Female";
+    }
+    switch(x)
+    {
+        case 'male':
+            document.getElementById("getVal").innerHTML="Person is male";
+            break;
+        case 'female':
+            document.getElementById("getVal").innerHTML="Person is female";
+            break;
+        default:
+            document.getElementById("getVal").innerHTML="Gender Unspecified";
+    }
+}
+function genderS()
+{
+    x = document.getElementById("val").value;
+    switch(x)
+    {
+        case 'male':
+            document.getElementById("getVal").innerHTML="Person is male";
+            break;
+        case 'female':
+            document.getElementById("getVal").innerHTML="Person is female";
+            break;
+        default:
+            document.getElementById("getVal").innerHTML="Gender Unspecified";
+    }
+}
+
+function regForm()
+{
+    var name = document.reg.name.value;
+    var age = document.reg.age.value;
+    document.getElementById("result").innerHTML=name;
 }
