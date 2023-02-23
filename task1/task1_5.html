@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form name="reg" action="result.html" method="post">
+    <form name="reg" action="" method="post">
         Name:<input type="text" name="name" ><br>
         Age:<input type="number" name="age"><br>
         Gender:<input type="radio" name="gen" value="male">Male<input type="radio" value="female" name="gen">Female<br>
@@ -15,9 +15,9 @@
         
 
 
-        <button type="submit" onsubmit="regForm()">click</button>
+        <button type="submit" onclick="regForm()">click</button>
     </form>
-    
+    <p id="result"></p>
     <script src="function.js"></script>
 </body>
 </html>

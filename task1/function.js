@@ -96,5 +96,16 @@ function regForm()
 {
     var name = document.reg.name.value;
     var age = document.reg.age.value;
-    document.getElementById("result").innerHTML=name;
+    var gen = document.reg.gen.value;
+    var stat = document.reg.status.value;
+    // document.getElementById("result").innerHTML=name;
+    
+
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",name,"</h2><br><br>");
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",age,"</h2><br><br>");
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",gen,"</h2><br><br>");
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",stat,"</h2><br><br>");
+    
+
+
 }
