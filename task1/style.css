@@ -1,0 +1,18 @@
+.array{
+    background-color: darkcyan;
+    height: 300px;
+    width:200px;
+    color: firebrick;
+}
+.show{
+    background-color: lightskyblue;
+    height: 300px;
+    width: 300px;
+    color: indianred;
+}
+.result{
+    background-color: aquamarine;
+    height: 200px;
+    width: 600px;
+    color:deeppink;
+}
