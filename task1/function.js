@@ -45,37 +45,32 @@ function fibanocci() {
     }
     document.getElementById("getVal").innerHTML = str1;
 }
-function gender() {
-    x = document.getElementById("val").value;
-
-    if (x == 'male') {
-        document.getElementById("getVal").innerHTML = "Person is male";
+function gender()
+{
+     x = document.reg.gen.value;
+   
+    if(x=='male')
+    {
+        document.write(document.reg.name.value," is a ", x);
     }
-    else if (x == 'female') {
-        document.getElementById("getVal").innerHTML = "Person is Female";
-    }
-    switch (x) {
-        case 'male':
-            document.getElementById("getVal").innerHTML = "Person is male";
-            break;
-        case 'female':
-            document.getElementById("getVal").innerHTML = "Person is female";
-            break;
-        default:
-            document.getElementById("getVal").innerHTML = "Gender Unspecified";
+    else if(x=='female')
+    {
+        document.write(document.reg.name.value," is a ", x);
     }
 }
-function genderS() {
-    x = document.getElementById("val").value;
-    switch (x) {
+function genderS()
+{
+    x = document.reg.gen.value;
+    switch(x)
+    {
         case 'male':
-            document.getElementById("getVal").innerHTML = "Person is male";
+            document.write(document.reg.name.value," is a ", x);
             break;
         case 'female':
-            document.getElementById("getVal").innerHTML = "Person is female";
+            document.write(document.reg.name.value," is a ", x);
             break;
         default:
-            document.getElementById("getVal").innerHTML = "Gender Unspecified";
+            document.write(document.reg.name.value," is a ", x);
     }
 }
 
@@ -87,134 +82,9 @@ function regForm() {
     // document.getElementById("result").innerHTML=name;
 
 
-    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>", name, "</h2><br><br>");
-    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>", age, "</h2><br><br>");
-    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>", gen, "</h2><br><br>");
-    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>", stat, "</h2><br><br>");
-
-
-
-}
-let friend = [];
-function addFriendsAtEnd() {
-    var val = document.getVal.name.value;
-    if (val == '') {
-        alert("Input Box Empty");
-    }
-    else {
-        friend.push(val);
-        document.getElementById("show").innerHTML = friend;
-    }
-}
-function addFriendsAtBeginning() {
-    var val = document.getVal.name.value;
-    if (val == '') {
-        alert("Input Box Empty");
-    }
-    else {
-        friend.unshift(val);
-        document.getElementById("show").innerHTML = friend;
-    }
-}
-function deleteFriendsAtEnd() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        friend.pop();
-        document.getElementById("show").innerHTML = friend;
-    }
-}
-function deleteFriendsAtBeginning() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        friend.shift()
-        document.getElementById("show").innerHTML = friend;
-    }
-}
-function showArray() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        document.getElementById("show").innerHTML = friend;
-    }
-}
-function sortArray() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        let result = "Un sorted array:<br>" + friend.reverse() + "<br>Sorted Array:<br>" + friend.sort();
-        document.getElementById("show").innerHTML = result;
-    }
-}
-function printFor() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        var resStr = "";
-        for (i = 0; i < friend.length; i++) {
-            resStr = resStr + friend[i] + " ";
-        }
-        document.getElementById("show").innerHTML = resStr;
-    }
-}
-function printForEach() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        var resStr = "";
-        friend.forEach(x => {
-            resStr = resStr + x + " ";
-        });
-        document.getElementById("show").innerHTML = resStr;
-    }
-}
-function printForIn() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        var resStr = "";
-        for (const key in friend) {
-            if (Object.hasOwnProperty.call(friend, key)) {
-                resStr = resStr + friend[key] + " ";
-            }
-        }
-        document.getElementById("show").innerHTML = resStr;
-    }
-}
-function printForOf() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        var resStr = "";
-        for (const x of friend) {
-            resStr = resStr + x + " ";
-        }
-        document.getElementById("show").innerHTML = resStr;
-    }
-}
-function printComma() {
-    if (friend.length == 0) {
-        alert("Array Empty");
-    }
-    else {
-        var resStr = friend.join();
-        document.getElementById("show").innerHTML = resStr;
-    }
-}
-function printDateTime() {
-
-    var resStr =new Date();
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",name,"</h2><br><br>");
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",age,"</h2><br><br>");
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",gen,"</h2><br><br>");
+    document.write("<h2 style='margin:20px; font-family:Cambria; background-color:#e9967a; position:absolute'>",stat,"</h2><br><br>");
     
-
-    document.getElementById("show").innerHTML = resStr.toLocaleTimeString()+"  "+resStr.toLocaleDateString();
-
 }

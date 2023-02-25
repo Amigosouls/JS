@@ -7,13 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    Enter Details:<input type="text" placeholder="Enter Name:"><br>
-    Age:<input type="text" placeholder="Enter Age"><br>
-    Gender:<input type="text" id="val" placeholder="Enter Gender"><br>
+    <form name="reg" action="" method="post">
+    Enter Details:<input type="text" placeholder="Enter Name:"name="name"><br>
+    Age:<input type="text" placeholder="Enter Age" name="age"><br>
+    Gender:<input type="radio" id="val" value="male" name="gen"><input type="radio" name="gen" value="female"><br>
 
     <h2 id="getVal"></h2>
     <button onclick="gender()">Check with if</button><button onclick="genderS()">Check with switch</button>
-
+    </form>
 
    <script src="function.js"></script> 
 </body>
