@@ -6,8 +6,8 @@
 }
 .show{
     background-color: lightskyblue;
-    height: 300px;
-    width: 300px;
+    height: 600px;
+    width: 600px;
     color: indianred;
 }
 .result{
@@ -15,4 +15,10 @@
     height: 200px;
     width: 600px;
     color:deeppink;
+}
+.show input{
+    margin: 30px;
+    color: crimson;
+    background-color: violet;
+
 }
